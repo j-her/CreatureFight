@@ -66,7 +66,7 @@ public class HealthBar extends Actor
     {
 
         //Need to add code
-             frame=new GreenfootImage( WIDTH, HEIGHT );
+        frame=new GreenfootImage( WIDTH, HEIGHT );
         healthBar=new GreenfootImage( WIDTH, HEIGHT );
         
         frame.setColor( Color.GRAY );
@@ -107,7 +107,7 @@ public class HealthBar extends Actor
             
             if(current>=target)
             {
-               current=target; 
+                current=target; 
             }
         }
         
@@ -133,7 +133,7 @@ public class HealthBar extends Actor
         //Need to add if statements
         if( current > max / 2 )
         {
-           healthBar.setColor( good );
+            healthBar.setColor( good );
         }
         else if ( current > max / 4 )
         {

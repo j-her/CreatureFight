@@ -59,7 +59,7 @@ public class CreatureWorld extends World
      */
     public void act()
     {
-       List allObjects=getObjects(null);
+        List allObjects=getObjects(null);
        
         if(playerOneCreature.getHealthBar().getCurrent()<=0)
         {
@@ -68,32 +68,11 @@ public class CreatureWorld extends World
             Greenfoot.stop();
         }
         
-             if(playerTwoCreature.getHealthBar().getCurrent()<=0)
+        if(playerTwoCreature.getHealthBar().getCurrent()<=0)
         {
             removeObjects(allObjects);
             showText("you win!...",getWidth()/2,getHeight()/2);
             Greenfoot.stop();
         }
-    }
-    
-    
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
-    private void prepare()
-    {
-        HealthBar healthbar = new HealthBar();
-        addObject(healthbar,201,134);
-        healthbar.setLocation(209,153);
-        healthbar.setLocation(178,165);
-        healthbar.setLocation(198,167);
-        Button button = new Button();
-        addObject(button,128,305);
-        Button button2 = new Button();
-        addObject(button2,293,310);
-        removeObject(button);
-        removeObject(button2);
-        removeObject(healthbar);
     }
 }

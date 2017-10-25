@@ -10,9 +10,9 @@ public class Pikachu extends Creature
 {
     public Pikachu(World w)
     {
-     super(700,2);
-     getImage().scale( 150, 100);
-     w.addObject(getHealthBar(),100,25);
+        super(700,2);
+        getImage().scale( 150, 100);
+        w.addObject(getHealthBar(),100,25);
     }
      /**
      * Act - do whatever the Pikachu wants to do. This method is called whenever
@@ -20,7 +20,7 @@ public class Pikachu extends Creature
      */
     public void act() 
     {
-       CreatureWorld playerWorld=(CreatureWorld) getWorld();
+        CreatureWorld playerWorld=(CreatureWorld) getWorld();
         if(getHealthBar().getCurrent()<=0)
         {
             getWorld().showText("Pikachu has fainted...",getWorld().getWidth()/2,getWorld().getHeight()/2+26);
